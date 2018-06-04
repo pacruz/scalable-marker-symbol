@@ -2,7 +2,7 @@
   "name": "scalable-marker-symbol",
   "version": "1.0.0",
   "description": "ScalableMarkerSymbol custom symbol",
-  "main": "index.js",
+  "main": "./app/esrips/symbols/ScalableMarkerSymbol.js",
   "scripts": {
     "watch": "tsc -w",
     "start": "concurrently --kill-others \"tsc -w\" \"lite-server -c ./ls-config.json\""
