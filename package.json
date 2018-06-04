@@ -1,0 +1,21 @@
+{
+  "name": "scalable-marker-symbol",
+  "version": "1.0.0",
+  "description": "ScalableMarkerSymbol custom symbol",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "start": "concurrently --kill-others \"tsc -w\" \"lite-server -c ./ls-config.json\""
+  },
+  "author": "p. cruz <pcruz@esri.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@types/arcgis-js-api": "^4.7.0",
+    "dojo-typings": "^1.11.9"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "lite-server": "^2.3.0"
+  }
+}
