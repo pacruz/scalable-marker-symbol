@@ -5,7 +5,6 @@ declare class ScalableMarkerSymbol extends ScalableMarkerSymbol_base {
     private _height;
     private _displayBoundary;
     width: number;
-    firstName: string;
     height: number;
     path: string;
     constructor();
