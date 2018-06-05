@@ -2,10 +2,10 @@
   "name": "scalable-marker-symbol",
   "version": "1.0.0",
   "description": "ScalableMarkerSymbol custom symbol",
-  "main": "./app/esrips/symbols/ScalableMarkerSymbol.js",
+  "main": ".dist/ScalableMarkerSymbol.js",
+  "types": "dist/ScalableMarkerSymbol.d.ts",
   "scripts": {
-    "watch": "tsc -w",
-    "start": "concurrently --kill-others \"tsc -w\" \"lite-server -c ./ls-config.json\""
+    "build": "tsc"
   },
   "author": "p. cruz <pcruz@esri.com>",
   "license": "MIT",
@@ -13,9 +13,5 @@
   "dependencies": {
     "@types/arcgis-js-api": "^4.7.0",
     "dojo-typings": "^1.11.9"
-  },
-  "devDependencies": {
-    "concurrently": "^3.5.1",
-    "lite-server": "^2.3.0"
   }
 }

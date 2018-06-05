@@ -20,7 +20,7 @@ class ScalableMarkerSymbol extends declared(PictureMarkerSymbol) {
     this._width = value * 0.75;
   }
 
-  @property()
+  @property() 
   firstName: string = "John";
 
   @property()

@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "amd",
+    "declaration": true,
     "noImplicitAny": false,
     "sourceMap": true,
     "jsx": "react",
@@ -8,10 +9,11 @@
     "target": "es5",
     "experimentalDecorators": true,
     "preserveConstEnums": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "./dist"
   },
   "include": [
-    "app/**/*.ts"
+    "./*.ts"
   ],
   "exclude": [
     "node_modules"
