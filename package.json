@@ -2,8 +2,8 @@
   "name": "scalable-marker-symbol",
   "version": "1.0.0",
   "description": "ScalableMarkerSymbol custom symbol",
-  "main": ".dist/ScalableMarkerSymbol.js",
-  "types": "dist/ScalableMarkerSymbol.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc"
   },

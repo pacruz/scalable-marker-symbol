@@ -48,12 +48,8 @@ class ScalableMarkerSymbol extends declared(PictureMarkerSymbol) {
 
     let width = Math.abs(xMax - xMin);
     let height = Math.abs(yMax - yMin);
-
     
-    var svgXml = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}">`;
-    svgXml += `<path d="${value}"/>`;
-    svgXml += `</svg>`;
-
+    var svgXml = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}"><path d="${value}"/></svg>`;
     this.url = 'data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?>' + svgXml;
   }
 

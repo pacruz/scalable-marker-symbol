@@ -1,6 +1,0 @@
-{
-  "port": 3074,
-  "server": {
-    "baseDir": "./test"
-  }
-}

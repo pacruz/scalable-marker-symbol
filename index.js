@@ -18,7 +18,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 define(["require", "exports", "esri/core/tsSupport/declareExtendsHelper", "esri/core/tsSupport/decorateHelper", "esri/symbols/PictureMarkerSymbol", "esri/core/accessorSupport/decorators"], function (require, exports, __extends, __decorate, PictureMarkerSymbol, decorators_1) {
     "use strict";
-    var ScalableMarkerSymbol = (function (_super) {
+    var ScalableMarkerSymbol = /** @class */ (function (_super) {
         __extends(ScalableMarkerSymbol, _super);
         function ScalableMarkerSymbol() {
             var _this = _super.call(this) || this;
@@ -63,28 +63,26 @@ define(["require", "exports", "esri/core/tsSupport/declareExtendsHelper", "esri/
                 var yMax = Math.max.apply(Math, arrs[1]);
                 var width = Math.abs(xMax - xMin);
                 var height = Math.abs(yMax - yMin);
-                var svgXml = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 " + width + " " + height + "\">";
-                svgXml += "<path d=\"" + value + "\"/>";
-                svgXml += "</svg>";
+                var svgXml = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 " + width + " " + height + "\"><path d=\"" + value + "\"/></svg>";
                 this.url = 'data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?>' + svgXml;
             },
             enumerable: true,
             configurable: true
         });
+        __decorate([
+            decorators_1.property()
+        ], ScalableMarkerSymbol.prototype, "width", null);
+        __decorate([
+            decorators_1.property()
+        ], ScalableMarkerSymbol.prototype, "height", null);
+        __decorate([
+            decorators_1.property()
+        ], ScalableMarkerSymbol.prototype, "path", null);
+        ScalableMarkerSymbol = __decorate([
+            decorators_1.subclass('esrips.symbols.ScalableMarkerSymbol')
+        ], ScalableMarkerSymbol);
         return ScalableMarkerSymbol;
     }(decorators_1.declared(PictureMarkerSymbol)));
-    __decorate([
-        decorators_1.property()
-    ], ScalableMarkerSymbol.prototype, "width", null);
-    __decorate([
-        decorators_1.property()
-    ], ScalableMarkerSymbol.prototype, "height", null);
-    __decorate([
-        decorators_1.property()
-    ], ScalableMarkerSymbol.prototype, "path", null);
-    ScalableMarkerSymbol = __decorate([
-        decorators_1.subclass('esrips.symbols.ScalableMarkerSymbol')
-    ], ScalableMarkerSymbol);
     return ScalableMarkerSymbol;
 });
-//# sourceMappingURL=ScalableMarkerSymbol.js.map
+//# sourceMappingURL=index.js.map
